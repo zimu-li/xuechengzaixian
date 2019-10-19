@@ -1,0 +1,531 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+i,
+u,
+b {
+  font-style: normal;
+}
+ul li {
+  list-style: none;
+}
+body {
+  font-family: 'Microsoft YaHei';
+  background-color: #f3f5f7;
+  height: 3000px;
+}
+a {
+  text-decoration: none;
+}
+.w12 {
+  width: 1200px;
+  margin: auto;
+}
+/* 清除浮动 */
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+/* 头部 header start */
+.header {
+  width: 1200px;
+  margin: 30px auto;
+  /* background-color: #ffff86; */
+}
+/* logo */
+.header .logo {
+  float: left;
+  margin-right: 70px;
+}
+.header .logo img {
+  vertical-align: middle;
+}
+/* 导航菜单 */
+.header .nav {
+  float: left;
+}
+.header .nav ul li {
+  float: left;
+  height: 40px;
+}
+.header .nav ul li a {
+  display: block;
+  height: 40px;
+  padding: 0 8px 0 9px;
+  margin-right: 27px;
+  line-height: 42px;
+  color: #050505;
+  font-family: 'Microsoft YaHei';
+  font-size: 18px;
+}
+.header .nav ul li a:hover {
+  border-bottom: 2px solid #02a5ff;
+}
+/* 搜索框 */
+.header .search {
+  float: left;
+  width: 411px;
+  margin-right: 31px;
+  margin-top: 1px;
+}
+.header .search input {
+  float: left;
+  width: 342px;
+  height: 38px;
+  padding-left: 18px;
+  border: 1px solid #04a3ff;
+  border-right: 0;
+  outline: none;
+}
+.header .search input::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+/* 搜索按钮 */
+.header .search button {
+  float: left;
+  width: 50px;
+  height: 40px;
+  background: #04a3ff url(../images/search.png) no-repeat center;
+  border: 0;
+}
+.header .search button:hover {
+  cursor: pointer;
+}
+/* 用户信息 */
+.header .user {
+  float: left;
+  height: 42px;
+  color: #666;
+  line-height: 42px;
+}
+.header .user img {
+  vertical-align: middle;
+}
+/* header end */
+
+/* banner 部分 start */
+.banner {
+  height: 420px;
+  background: #1c036b url(../images/banner.jpg) no-repeat center;
+}
+.banner .w {
+  position: relative;
+  width: 1200px;
+  height: 420px;
+  margin: 0 auto;
+}
+/* 左侧边栏 */
+.w .sidebar {
+  width: 150px;
+  padding: 12px 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.w .sidebar ul li {
+  height: 44px;
+}
+/* 超链接 */
+.w .sidebar ul li a {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 44px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 44px;
+}
+.w .sidebar ul li a:hover {
+  color: #00b4ff;
+}
+/* 箭头 */
+.w .sidebar ul li i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  float: right;
+  width: 5px;
+  height: 9px;
+  background: url(../images/jiantou.png) no-repeat;
+}
+.w .sidebar ul li a:hover i {
+  background: url(../images/jiantou2.png) no-repeat;
+}
+/* 轮播指示按钮 */
+.w .swiper_btns {
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  transform: translateX(-50%);
+  margin: 0 auto;
+}
+.w .swiper_btns ul li {
+  float: left;
+  width: 28px;
+}
+.w .swiper_btns ul li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: width 0.1s;
+}
+.w .swiper_btns ul li a:hover,
+.w .swiper_btns ul li:first-child {
+  width: 19px;
+  border-radius: 8px;
+  background: #fff;
+}
+/* 右侧课程表 */
+.w .course {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 228px;
+  height: 300px;
+  background-color: #fff;
+}
+.course .course-hd {
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  background-color: #9bceeb;
+}
+.course-hd h1 {
+  font-size: 18px;
+  text-align: center;
+}
+.course-bd {
+  padding: 10px 18px 0;
+}
+.course-bd ul li {
+  height: 50px;
+  padding-top: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+.course-bd ul li a {
+  display: block;
+  color: #5b5b5b;
+  font-size: 16px;
+}
+.course-bd ul li a i {
+  font-size: 14px;
+}
+.course-bd ul li a span {
+  color: #b4b4b4;
+  font-size: 12px;
+}
+.course-bd ul li a:hover {
+  color: #00b4ff;
+}
+.course-bd ul li a:hover span {
+  color: #00b4ff;
+}
+.course-all {
+  width: 198px;
+  margin: 10px auto 0;
+  text-align: center;
+  line-height: 38px;
+}
+.course-all a {
+  display: block;
+  width: 100%;
+  height: 38px;
+  color: #00b4ff;
+  border: 1px solid #00b4ff;
+}
+.course-all a:hover {
+  color: #fff;
+  background-color: #00b4ff;
+}
+/* banner ned */
+
+/* 精品推荐 start*/
+.box {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 精品推荐菜单栏 start */
+.goods-nav {
+  position: relative;
+  height: 60px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  line-height: 60px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.goods-nav ul li {
+  position: relative;
+  float: left;
+}
+/* 竖线 */
+.goods-nav ul li i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  font-size: 0;
+  background-color: #bfbfbf;
+}
+.goods-nav ul li a {
+  display: block;
+  padding: 0 34px;
+  color: #020202;
+}
+.goods-nav ul li:first-child a {
+  color: #009cff;
+}
+.goods-nav ul li a:hover {
+  color: #009cff;
+}
+/* 右侧 修改兴趣 */
+.goods-nav .goods-r-btn {
+  position: absolute;
+  top: 50%;
+  right: 26px;
+  transform: translateY(-50%);
+}
+.goods-nav .goods-r-btn a {
+  font-size: 14px;
+  color: #009cff;
+}
+/* 精品推荐 end */
+
+/* 精品推荐头部标题 */
+box .box-header {
+  height: 40px;
+  color: #444547;
+}
+.box .box-header .h-title {
+  line-height: 40px;
+}
+.box .box-header .h-title h3 {
+  float: left;
+  font-weight: normal;
+  font-size: 20px;
+}
+/* 各阶段标题 */
+.box .box-header .h-title .ul-c {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.box-header .h-title .ul-c ul li {
+  float: left;
+  padding: 0 36px;
+  font-size: 14px;
+}
+.h-title .ul-c ul li a {
+  color: #7d7e80;
+}
+.h-title .ul-c ul li:first-child a {
+  color: #00b4ff;
+}
+.h-title .ul-c ul li a:hover {
+  color: #00b4ff;
+}
+/* 查看全部 */
+.box .box-header .a-r {
+  float: right;
+  margin-right: 30px;
+}
+.box .box-header .a-r a {
+  color: #9a9b9d;
+  font-size: 12px;
+}
+.box .box-header .a-r a:hover {
+  color: #00b4ff;
+}
+/* 课程内容列表 */
+.box .box-list {
+  width: 1215px;
+}
+.list-item ul li {
+  position: relative;
+  float: left;
+  width: 228px;
+  height: 270px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+.boxShadow {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.list-item ul li:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.list-item .li-img img {
+  display: block;
+}
+.list-item .li-img span {
+  position: absolute;
+  top: 4px;
+  right: -4px;
+  width: 40px;
+  height: 24px;
+}
+.list-item .li-content {
+  padding: 20px 20px 20px 24px;
+  color: #030303;
+}
+.list-item .li-content h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+.list-item .li-content p {
+  color: #979797;
+  font-size: 12px;
+  line-height: 24px;
+}
+.list-item .li-content p i {
+  color: #fd7718;
+}
+/* 精品推荐内容 end */
+
+/* 编程入门 start*/
+/* 左侧 */
+.box-data .data-l {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.box-data .data-l:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.box-data .data-l a {
+  display: block;
+  width: 228px;
+  height: 392px;
+  color: #fff;
+  background: url(../images/biancheng_l2.png) no-repeat;
+}
+.box-data .data-l a .d-content {
+  padding: 35px 0 0 35px;
+}
+.data-l .d-content .h-l h3 {
+  font-size: 18px;
+  line-height: 2;
+}
+.data-l .d-content .jieduan {
+  margin-top: 40px;
+}
+.data-l .d-content .jieduan .yuan {
+  float: left;
+  width: 11px;
+  height: 158px;
+  margin-top: 2px;
+  background: url(../images/circle.png) no-repeat;
+}
+.d-content .jieduan .jieduan-go {
+  float: left;
+  font-size: 14px;
+  margin-left: 4px;
+}
+.d-content .jieduan .jieduan-go p {
+  margin-bottom: 52px;
+}
+/* 右侧 */
+.box-data .data-r {
+  float: left;
+  width: 957px;
+}
+.box-data .data-r .data-r-top {
+  margin-bottom: 22px;
+}
+.box-data .data-r .data-r-top:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.box-data .data-r .data-r-top a {
+  display: block;
+  width: 957px;
+  height: 100px;
+  background: url(../images/biancheng_h.png) no-repeat;
+}
+.box-data .data-r .data-r-bottom ul li:last-child {
+  margin-right: 0;
+}
+/* 编程入门 end */
+
+/* 数据分析师 */
+.box-data .shuju-l a {
+  background: url(../images/shuju_l.png) no-repeat;
+}
+.box-data .data-r .shuju-r-top a {
+  background: url(../images/shuju_t.png) no-repeat;
+}
+/* 前端 */
+.qianduan-box {
+  margin-bottom: 25px;
+}
+/* 底部页脚 */
+.footer {
+  height: 415px;
+  background-color: #fff;
+}
+.footer .footer-box {
+  width: 1150px;
+  padding: 30px 30px 0 20px;
+  margin: 0 auto;
+  color: #6a6a6a;
+  font-size: 12px;
+}
+/* 左侧 */
+.footer .footer-box .f-l {
+  float: left;
+  width: 440px;
+}
+.footer .footer-box .f-l img {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer .footer-box .f-l p {
+  margin-bottom: 15px;
+}
+.footer .footer-box .f-l a {
+  display: block;
+  width: 118px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  color: #08a8fe;
+  border: 1px solid #08a8fe;
+}
+.footer .footer-box .f-l a:hover {
+  color: #fff;
+  background-color: #08a8fe;
+}
+/* 右侧 */
+.footer .footer-box .f-r {
+  float: right;
+}
+.footer .footer-box .f-r dl {
+  float: left;
+  margin-left: 100px;
+}
+.footer .footer-box .f-r dl dt {
+  height: 35px;
+  font-size: 16px;
+  color: #7d7d7d;
+}
+.footer .footer-box .f-r a {
+  color: #333;
+  line-height: 20px;
+}
+.footer .footer-box .f-r a:hover {
+  color: #0f99fe;
+}
